@@ -7,7 +7,7 @@ paginate:            5
 markdown:            kramdown
 highlighter:         rouge
 permalink:           /:title
-plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
+plugins:             [jekyll-polyglot, jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           "Millennial"
@@ -17,3 +17,11 @@ author:              "Paul Le"
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:
 #  path: rss-feed.xml
+
+languages: ["en", "de"]
+default_lang: "de"
+exclude_from_localization: ["_sass", "assets"]
+parallel_localization: true
+
+sass:
+    sourcemap: never
